@@ -14,20 +14,23 @@
                 </button>
             </div>
             
-             <div class="col-md-6">
-                <button type="submit" class=" btn btn-danger btn-block">
+             <div class="col-md-3">
+                 
+                 <a href="${pageContext.request.contextPath}/servletControlador?accion=eliminar&idAnime=${anime.idanime}"
+                     class="btn btn-danger btn-block">
+                     <i class="fas fa-check"></i>
+                     Eliminar
+                 </a>
+<!--                <button type="submit" class=" btn btn-danger btn-block">
                     <i class="fas fa-check"></i>
                     Eliminar
-                </button>
+                </button>-->
             </div>
             
            
         </div>
     </div>
 </section>
-
-
-
 <style>
  
 </style>

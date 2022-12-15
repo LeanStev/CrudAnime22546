@@ -22,7 +22,7 @@ public class ServletControlador extends HttpServlet{
                     editarAnime(req,res);
                     break;
                 case "eliminar":
-                    modificarAnime(req,res);
+                    eliminarAnime(req,res);
                     break;
                 default:
                     accionDefault(req,res);
@@ -48,7 +48,7 @@ public class ServletControlador extends HttpServlet{
                     break;
                  
                 default:
-                    //eliminarAnime(req,res);
+                    accionDefault(req,res);
                     break;
             }
         }else{
@@ -154,7 +154,18 @@ public class ServletControlador extends HttpServlet{
         accionDefault(req,res);
     }
     
-
+    private void eliminarAnime (HttpServletRequest req,HttpServletResponse res) 
+        throws ServletException, IOException {
+        
+        int idanime = Integer.parseInt(req.getParameter("idAnime"));
+        
+        int regBorrados = new AnimesDAO().eliminar(idanime);
+        
+        System.out.println("Registros eliminados"+ regBorrados);
+        
+        accionDefault(req,res);
+    }
+    
 
 }
 

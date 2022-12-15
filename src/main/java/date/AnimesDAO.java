@@ -152,24 +152,30 @@ public class AnimesDAO {
     }
    
    
-    public void eliminar(Anime anime) {
+    public int eliminar(int idanime) {
     Connection conn = null;
     PreparedStatement stmt = null;
+    int registros = 0;
     try {
         conn = getConexion();
+        
         stmt = conn.prepareStatement(SQL_DELETE);
-        stmt.setInt(1, anime.getidanime());
-        stmt.executeUpdate();
+        
+        stmt.setInt(1,idanime);
+        registros = stmt.executeUpdate();
+        
     } catch (SQLException ex) {
         ex.printStackTrace(System.out);
-    } finally {
+    } 
+    finally {
         try {
             close(stmt);
             close(conn);
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+            }
         }
+     return registros;
     }
-}
-
+    
 }
