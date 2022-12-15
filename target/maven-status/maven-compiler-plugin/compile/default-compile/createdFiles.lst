@@ -1,0 +1,5 @@
+controller\ServletControlador.class
+date\ConexionBD.class
+date\AnimesDAO.class
+dominio\Anime.class
+presentacion\Main.class
