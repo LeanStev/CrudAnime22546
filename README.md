@@ -6,7 +6,7 @@
 <p>//Se creo un frontend con archivos JSP (Bootstrap,HTML,CSS,JS) para que el usuario pueda interactuar con el mismo.</p>
 <p>//Se realizo el backend las peticiones correspodientes con lenguaje JAVA.</p>
 
-<p>// las tecnologicas aplicadas fueron: 
+<p>// los conocimientos aplicadas fueron: 
 JPA, JDBC,MVC
 </p>
 
