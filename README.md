@@ -2,11 +2,12 @@
 
 <h2> CRUD hecho para la cursada Codo a Codo 4.0. </h2>
 
-<p>Un crud hecho para el moudlo backend con metodos http </p>
+<p>//En el mismo se realizo un CRUD realizando la conexion con una base de datos MySQL.</p>
+<p>//Se creo un frontend con archivos JSP (Bootstrap,HTML,CSS,JS) para que el usuario pueda interactuar con el mismo.</p>
+<p>//Se realizo el backend las peticiones correspodientes con lenguaje JAVA.</p>
 
-<p> las tecnologicas aplicadas fueron: 
+<p>// las tecnologicas aplicadas fueron: 
 JPA, JDBC,MVC
-Base de datos MySQL
 </p>
 
 
