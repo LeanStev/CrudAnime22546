@@ -11,8 +11,8 @@ import org.apache.commons.dbcp2.BasicDataSource;
 public class ConexionBD {
    
     private static final String JDBC_URL="jdbc:mysql://localhost:3306/animes?useSSL=false&useTimeZone=true&serverTimeZone=UTC&allowPublicKeyRetrieval=true";
-    private static final String JDBC_USR = "root";
-    private static final String JDBC_PASS = "Admin";
+    private static final String JDBC_USR = "****";
+    private static final String JDBC_PASS = "*****";
     
     public static DataSource getDataSource(){
         BasicDataSource ds = new BasicDataSource();
